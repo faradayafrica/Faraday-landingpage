@@ -1,7 +1,20 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        heroBg: "#FBF7F4",
+        brandColor: "#05B851",
+        textBlack: "#3F3F41",
+        storiesBg: "#3F3F41",
+      },
+      fontFamily: {
+        workSans: "Work Sans",
+      },
+      backgroundImage: {
+        heroImg: "url('./images/heroBg.png')",
+      },
+    },
   },
   plugins: [],
 };

@@ -1,10 +1,15 @@
 // import "./App.css";
 
+import Hero from "./components/Hero";
+import Main from "./components/Main";
+import Stories from "./components/Stories";
+
 function App() {
   return (
-    <div className=''>
-      <p className='text-left'>Hello</p>
-    </div>
+    <>
+      <Hero />
+      <Main />
+    </>
   );
 }
 
