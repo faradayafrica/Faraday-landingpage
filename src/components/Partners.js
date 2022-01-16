@@ -2,7 +2,7 @@ import React from "react";
 import BinaView from "../images/binaview.svg";
 import Shortened from "../images/shortened.svg";
 import Microsoft from "../images/microsoft.svg";
-import Github from "../images/github.svg";
+import Github from "../images/github-nau.svg";
 import I4g from "../images/i4g.svg";
 
 function Partners() {
@@ -12,7 +12,7 @@ function Partners() {
         Some of our partners and friends
       </h3>
 
-      <div className='flex flex-col md:flex-row gap-4 mt-14'>
+      <div className='flex flex-col md:flex-row gap-6 mt-14'>
         <img className='block mx-auto' src={BinaView} alt='bina view' />
         <img className='block mx-auto' src={Shortened} alt='Shortened' />
         <img
