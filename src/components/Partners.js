@@ -7,12 +7,12 @@ import I4g from "../images/i4g.svg";
 
 function Partners() {
   return (
-    <section>
+    <section className='container my-24'>
       <h3 className='font-extrabold text-[28px] md:text-[48px] mb-5 text-center'>
         Some of our partners and friends
       </h3>
 
-      <div className='flex flex-col md:flex-row gap-4'>
+      <div className='flex flex-col md:flex-row gap-4 mt-14'>
         <img className='block mx-auto' src={BinaView} alt='bina view' />
         <img className='block mx-auto' src={Shortened} alt='Shortened' />
         <img

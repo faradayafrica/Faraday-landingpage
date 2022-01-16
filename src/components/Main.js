@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import CommImage from "../images/community-imagery.png";
 import MakeFriends from "../images/make-friends.png";
 import NeverStuck from "../images/never-stuck.png";
+import Journey from "./Journey";
 import Partners from "./Partners";
 import Stories from "./Stories";
 
@@ -27,13 +28,13 @@ function Main() {
     },
   ]);
   return (
-    <main className='container'>
+    <main className=''>
       {data.map((info, i) => (
-        <section className='grid md:grid-cols-2 gap-4'>
+        <section className='container grid md:grid-cols-2 gap-6 my-24 md:px-16'>
           <img
             src={info.image}
             alt={info.heading}
-            className={`mx-auto ${i == 1 ? "" : "md:order-1"}`}
+            className={`mx-auto ${i === 1 ? "" : "md:order-1"}`}
           />
           <div className='my-auto'>
             <h2 className='font-extrabold text-[28px] md:text-[48px] mb-4'>
@@ -46,6 +47,7 @@ function Main() {
 
       <Stories />
       <Partners />
+      <Journey />
     </main>
   );
 }

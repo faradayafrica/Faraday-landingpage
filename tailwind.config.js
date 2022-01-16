@@ -7,6 +7,7 @@ module.exports = {
         brandColor: "#05B851",
         textBlack: "#3F3F41",
         storiesBg: "#3F3F41",
+        journeyBg: "#FBF7F4",
       },
       fontFamily: {
         workSans: "Work Sans",
