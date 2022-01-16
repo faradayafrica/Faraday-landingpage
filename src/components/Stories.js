@@ -32,7 +32,7 @@ function Stories() {
 
   useEffect(() => {
     let interval = setTimeout(() => {
-      if (count == 2) {
+      if (count === 2) {
         return setCount(0);
       }
       setCount(count + 1);
