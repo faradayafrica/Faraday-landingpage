@@ -46,7 +46,7 @@ function Stories() {
               <img
                 src={stories[count]?.fields?.profile_image[0].url}
                 alt={stories[count]?.fields?.name}
-                className='mx-auto max-w-[320px] md:mx-0'
+                className='w-full md:w-max mx-auto max-w-[320px] md:mx-0'
               />
               <h4 className='font-extrabold text-[20px] my-3 md:max-w-[320px]'>
                 Meet {stories[count]?.fields?.introduction}

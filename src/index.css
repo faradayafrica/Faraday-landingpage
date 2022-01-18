@@ -21,3 +21,14 @@ h3 {
     max-width: 1024px;
   }
 }
+
+@media (min-width: 768px) {
+  .heroBg {
+    background-position: center 420px;
+  }
+}
+@media (min-width: 800px) {
+  .heroBg {
+    background-position: center 240px;
+  }
+}
