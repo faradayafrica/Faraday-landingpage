@@ -30,7 +30,10 @@ function Main() {
   return (
     <main className=''>
       {data.map((info, i) => (
-        <section className='container grid md:grid-cols-2 gap-6 my-24 md:px-16'>
+        <section
+          key={i}
+          className='container grid md:grid-cols-2 gap-6 my-24 md:px-16'
+        >
           <img
             src={info.image}
             alt={info.heading}
