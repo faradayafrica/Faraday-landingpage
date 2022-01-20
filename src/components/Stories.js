@@ -12,7 +12,7 @@ function Stories() {
       })
       .eachPage((records, fetchNextPage) => {
         setStories(records);
-        console.log(records);
+        // console.log(records);
         fetchNextPage();
       });
   }, []);
