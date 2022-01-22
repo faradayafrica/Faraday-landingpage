@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CommImage from "../images/community-imagery.png";
+// import CommImage from "../images/community-imagery.png";
 import MakeFriends from "../images/make-friends.png";
 import NeverStuck from "../images/never-stuck.png";
 import Journey from "./Journey";
@@ -12,7 +12,7 @@ function Main() {
       heading: "Ask Questions, Get Help, Go Beyond.",
       description:
         "Join an inclusive and diverse community of forward thinking students helping each other solve academic questions. Boost your learning and fast track your progress with help from other students using Faraday.",
-      image: CommImage,
+      image: NeverStuck,
     },
     {
       heading: "Make new friends beyond your campus.",
@@ -20,12 +20,12 @@ function Main() {
         "Discover and connect with amazing scholars from around the globe in Faraday. You can collaborate, share, or just talk about your day with our in-app private chat.",
       image: MakeFriends,
     },
-    {
-      heading: "Never get stuck on course work",
-      description:
-        "Whether you’re blocked on a Mathematics question or got stuck on an history question, Get expert-verified answers fast in a matter of seconds from Faraday bot powered by Wolfram Alpha.",
-      image: NeverStuck,
-    },
+    // {
+    //   heading: "Never get stuck on course work",
+    //   description:
+    //     "Whether you’re blocked on a Mathematics question or got stuck on an history question, Get expert-verified answers fast in a matter of seconds from Faraday bot powered by Wolfram Alpha.",
+    //   image: CommImage,
+    // },
   ]);
   return (
     <main className=''>
@@ -43,7 +43,9 @@ function Main() {
             <h2 className='font-extrabold text-[28px] md:text-[48px] mb-4'>
               {info.heading}
             </h2>
-            <p className='text-lg [line-height:_30px]'>{info.description}</p>
+            <p className='text-lg [line-height:_30px] font-roboto'>
+              {info.description}
+            </p>
           </div>
         </section>
       ))}

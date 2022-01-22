@@ -11,6 +11,7 @@ module.exports = {
       },
       fontFamily: {
         workSans: "Work Sans",
+        roboto: "Roboto",
       },
       backgroundImage: {
         heroImg: "url('./images/heroBg.png')",

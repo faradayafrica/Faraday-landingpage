@@ -35,7 +35,7 @@ function Stories() {
   return (
     <section className='bg-storiesBg text-white py-24'>
       <div className='container'>
-        <h3 className='font-extrabold text-[28px] md:text-[48px] mb-4'>
+        <h3 className='text-center font-extrabold text-[28px] md:text-[48px] md:text-left mb-4'>
           Student Stories
         </h3>
         {stories.length === 0 ? (
@@ -46,17 +46,18 @@ function Stories() {
               <img
                 src={stories[count]?.fields?.profile_image[0].url}
                 alt={stories[count]?.fields?.name}
-                className='w-full md:w-max mx-auto max-w-[320px] md:mx-0'
+                className='w-full md:w-max mx-auto max-w-[190px] md:max-w-[320px] md:mx-0'
+                loading='lazy'
               />
-              <h4 className='font-extrabold text-[20px] my-3 md:max-w-[320px]'>
+              <h4 className='font-extrabold text-[20px] my-3 text-center md:text-left md:max-w-[320px]'>
                 Meet {stories[count]?.fields?.introduction}
               </h4>
             </div>
-            <div className=''>
+            <div className='font-roboto'>
               <blockquote className='text-center md:text-left font-medium [line-height:_36px] md:text-[28px]'>
                 {stories[count]?.fields?.quote}
               </blockquote>
-              <span className='text-center md:text-left text-[#CFD9DE] block mt-4'>
+              <span className='text-center md:text-left text-[#CFD9DE] block mt-10'>
                 {stories[count]?.fields?.date}
               </span>
             </div>

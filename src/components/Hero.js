@@ -9,9 +9,13 @@ function Hero() {
         <h1 className='text-center text-[40px] md:text-[72px] font-extrabold max-w-[780px] mx-auto'>
           Stay Connected with Students from all over the world.
         </h1>
-        <button className='block bg-brandColor text-white mx-auto px-6 py-4 mt-5'>
+        <a
+          href='https://airtable.com/shrQH21yievW9E11k'
+          rel='noopener'
+          className='block bg-brandColor text-white font-bold font-roboto mx-auto px-8 py-4 mt-10 w-max'
+        >
           Sign up now for free
-        </button>
+        </a>
       </div>
     </header>
   );

@@ -6,9 +6,7 @@ export default function Navigation() {
     <nav className='flex justify-between container pt-3'>
       <img src={Logo} alt='faraday logo' className='w-[120px]' />
 
-      <button className='border border-brandColor py-2 px-6 text-brandColor'>
-        Login
-      </button>
+      <button className='py-2 px-6 text-[#05B85166]'>Login</button>
     </nav>
   );
 }
