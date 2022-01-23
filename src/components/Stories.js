@@ -4,6 +4,7 @@ import SkeletonLoader from "./SkeletonLoader";
 
 function Stories() {
   const [stories, setStories] = useState([]);
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
     base("Social proof")
@@ -17,15 +18,17 @@ function Stories() {
       });
   }, []);
 
-  const [count, setCount] = useState(0);
-
   useEffect(() => {
-    let interval = setTimeout(() => {
-      if (count === 2) {
-        return setCount(0);
-      }
-      setCount(count + 1);
-    }, 10000);
+    let interval;
+
+    if (stories) {
+      interval = setTimeout(() => {
+        if (count === stories.length - 1) {
+          return setCount(0);
+        }
+        setCount(count + 1);
+      }, 10000);
+    }
 
     return () => {
       clearInterval(interval);
