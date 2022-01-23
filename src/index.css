@@ -7,10 +7,11 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
-  @apply font-workSans text-textBlack;
+  @apply font-workSans text-textBlack overflow-x-hidden;
 }
 
 h1,

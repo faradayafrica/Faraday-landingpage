@@ -14,7 +14,7 @@ module.exports = {
         roboto: "Roboto",
       },
       backgroundImage: {
-        heroImg: "url('./images/heroBg.png')",
+        heroImg: "url('./images/heroBg.svg')",
       },
     },
   },

@@ -19,7 +19,7 @@ function Footer() {
         <div className='col-start-2 md:col-auto'>
           <h5 className='font-medium'>Product</h5>
           <ul className='mt-1'>
-            <li className='text-[#3f3f41af]'>Sign up</li>
+            <li className='text-[#3f3f41af] cursor-pointer'>Sign up</li>
             {/* <li>
               <a href=''>Download app</a>
             </li> */}
@@ -28,12 +28,12 @@ function Footer() {
         <div className='col-start-1 row-start-2 md:col-start-3 md:row-start-1'>
           <h5 className='font-medium'>Company</h5>
           <ul className='mt-1'>
-            <li className='text-[#3f3f41af]'>About Faraday</li>
+            <li className='text-[#3f3f41af] cursor-pointer'>About Faraday</li>
             {/* <li>
               <a href=''>Advertise with us</a>
             </li> */}
-            <li className='text-[#3f3f41af]'>Terms of use</li>
-            <li className='text-[#3f3f41af]'>Privacy policy</li>
+            <li className='text-[#3f3f41af] cursor-pointer'>Terms of use</li>
+            <li className='text-[#3f3f41af] cursor-pointer'>Privacy policy</li>
           </ul>
         </div>
         <div className=''>

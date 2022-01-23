@@ -57,7 +57,7 @@ function Stories() {
               <blockquote className='text-center md:text-left font-medium [line-height:_36px] md:text-[28px]'>
                 {stories[count]?.fields?.quote}
               </blockquote>
-              <span className='text-center md:text-left text-[#CFD9DE] block mt-10'>
+              <span className='text-center md:text-left text-[#CFD9DE] block mt-6 md:mt-10'>
                 {stories[count]?.fields?.date}
               </span>
             </div>
