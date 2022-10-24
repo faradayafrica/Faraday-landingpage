@@ -20,12 +20,12 @@ function Main() {
         "Discover and connect with amazing scholars from around the globe in Faraday. You can collaborate, share, or just talk about your day with our in-app private chat.",
       image: MakeFriends,
     },
-    // {
-    //   heading: "Never get stuck on course work",
-    //   description:
-    //     "Whether you’re blocked on a Mathematics question or got stuck on an history question, Get expert-verified answers fast in a matter of seconds from Faraday bot powered by Wolfram Alpha.",
-    //   image: CommImage,
-    // },
+    {
+      heading: "Never get stuck on course work",
+      description:
+        "Whether you’re blocked on a Mathematics question or got stuck on an history question, get answers suggested by the community.",
+      image: CommImage,
+    },
   ]);
   return (
     <main className=''>
