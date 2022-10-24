@@ -11,7 +11,7 @@ function Hero() {
             Stay Connected with Students from all over the world.
           </h1>
           <a
-            href='https://airtable.com/shrQH21yievW9E11k'
+            href='https://app.faraday.africa/signup'
             rel='noopener'
             className='block bg-brandColor text-white font-bold font-roboto mx-auto px-8 py-4 mt-8 md:mt-10 w-max'
           >
