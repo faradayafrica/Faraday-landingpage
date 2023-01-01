@@ -22,7 +22,7 @@ function Journey() {
           Ready to start your Journey?
         </h3>
           <a
-            href='https://app.faraday.africa/signup'
+            href="https://app.faraday.africa/signup"
             rel='noopener'
             className='block bg-brandColor text-white font-bold font-roboto mx-auto px-8 py-4 mt-8 md:mt-10 w-max'
           >
