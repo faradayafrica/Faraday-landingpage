@@ -12,8 +12,8 @@ function Journey() {
           alt='Ready to start your Journey?'
           className='mx-auto'
         />
-        {/* <img src={ReadyLeft} alt='' className='absolute bottom-4' />
-        <img src={ReadyRight} alt='' /> */}
+        <img src={ReadyLeft} alt='' className='absolute bottom-4' />
+        <img src={ReadyRight} alt='' />
         <h3
           className='max-w-[390px] mx-auto md:max-w-max font-extrabold text-[28px] md:text-[48px] mb-5 text-center mt-8 
         before:absolute before:content-[""] before:bg-[url(./images/ready-left.svg)] before:w-[40px] before:h-[40px] before:[background-size:_40px_40px] md:before:w-[60px] md:before:h-[60px] md:before:[background-size:_60px_60px] before:-mt-5 before:-ml-16 md:before:-ml-20 
