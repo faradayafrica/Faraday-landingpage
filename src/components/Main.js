@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import CommImage from "../images/community-imagery.png";
+import CommImage from "../images/community-imagery.png";
 import MakeFriends from "../images/make-friends.png";
 import NeverStuck from "../images/never-stuck.png";
 import Journey from "./Journey";
@@ -23,7 +23,7 @@ function Main() {
     {
       heading: "Never get stuck on course work",
       description:
-        "Whether you’re blocked on a Mathematics question or got stuck on an history question, get answers suggested by the community.",
+        "Whether you’re blocked on a Mathematics question or stuck on an history question, get answers suggested by the community.",
       image: CommImage,
     },
   ]);
