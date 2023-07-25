@@ -48,7 +48,7 @@ html {
 }
 
 body {
-  @apply font-workSans text-textBlack overflow-x-hidden;
+  @apply  text-textBlack overflow-x-hidden;
 }
 
 h1,

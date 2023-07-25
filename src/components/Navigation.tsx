@@ -1,13 +1,24 @@
 import React from 'react';
 import Logo from '../images/logo.svg';
-import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Navigation() {
   return (
-    <nav className='flex justify-between container pt-3'>
-      <Image src={Logo} alt='faraday logo' className='w-[120px]' />
+    <nav className='flex items-center justify-between container pt-3'>
+      <Link href={'/'}>
+        <Logo className='w-[120px]' />
+      </Link>
 
-      <button className='py-2 px-6 text-[#05B85166]'>
+      <ul className='flex gap-6 justify-between'>
+        <li>Product Page</li>
+        <li>The Faraday App</li>
+        <li>About</li>
+        <li>
+          <Link href={'/blog'}>Blog</Link>
+        </li>
+      </ul>
+
+      <button className='py-2 px-6'>
         <a href='https://app.faraday.africa/login'>Login</a>
       </button>
     </nav>

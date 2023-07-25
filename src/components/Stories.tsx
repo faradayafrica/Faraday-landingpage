@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { base } from '@/util';
-import SkeletonLoader from './SkeletonLoader';
+import SkeletonLoader from '@/components/SkeletonLoader';
 
 function Stories() {
   const [stories, setStories] = useState<Array<any>>([]);

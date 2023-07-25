@@ -2,15 +2,16 @@ import '@/styles/globals.css';
 import type { AppProps } from 'next/app';
 import { Roboto, Work_Sans } from 'next/font/google';
 
-const workSans = Work_Sans({ subsets: ['latin'] });
+const workSans = Work_Sans({ subsets: ['latin'], variable: '--font-workSans' });
 const roboto = Roboto({
   subsets: ['latin'],
   weight: ['300', '400', '500'],
+  variable: '--font-roboto',
 });
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={`${workSans.className} ${roboto.className} font-sans`}>
+    <main className={`${roboto.className} font-sans`}>
       <Component {...pageProps} />;
     </main>
   );

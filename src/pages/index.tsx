@@ -1,46 +1,49 @@
 import Navigation from '@/components/Navigation';
-import { useState } from 'react';
 import CommImage from '../images/community-imagery.png';
 import MakeFriends from '../images/make-friends.png';
 import NeverStuck from '../images/never-stuck.png';
 import Stories from '@/components/Stories';
 import Partners from '@/components/Partners';
-import Journey from '@/components/Journey';
+// import Journey from '@/images/Journey';
 import Logo from '../images/footerLogo.svg';
 import Twitter from '../images/twitter.svg';
 import Github from '../images/github.svg';
 import Youtube from '../images/youtube.svg';
+import Image from 'next/image';
+import { TypographyH1 } from '@/components/Typography';
+
+const data = [
+  {
+    heading: 'Ask Questions, Get Help, Go Beyond.',
+    description:
+      'Join an inclusive and diverse community of forward thinking students helping each other solve academic questions. Boost your learning and fast track your progress with help from other students using Faraday.',
+    image: NeverStuck,
+  },
+  {
+    heading: 'Make new friends beyond your campus.',
+    description:
+      'Discover and connect with amazing scholars from around the globe in Faraday. You can collaborate, share, or just talk about your day with our in-app private chat.',
+    image: MakeFriends,
+  },
+  {
+    heading: 'Never get stuck on course work',
+    description:
+      "Whether you're blocked on a Mathematics question or stuck on an history question, get answers suggested by the community.",
+    image: CommImage,
+  },
+];
 
 export default function Home() {
-  const [data] = useState([
-    {
-      heading: 'Ask Questions, Get Help, Go Beyond.',
-      description:
-        'Join an inclusive and diverse community of forward thinking students helping each other solve academic questions. Boost your learning and fast track your progress with help from other students using Faraday.',
-      image: NeverStuck,
-    },
-    {
-      heading: 'Make new friends beyond your campus.',
-      description:
-        'Discover and connect with amazing scholars from around the globe in Faraday. You can collaborate, share, or just talk about your day with our in-app private chat.',
-      image: MakeFriends,
-    },
-    {
-      heading: 'Never get stuck on course work',
-      description:
-        'Whether you’re blocked on a Mathematics question or stuck on an history question, get answers suggested by the community.',
-      image: CommImage,
-    },
-  ]);
   return (
     <>
       <header className={`bg-heroBg text-textBlack md:min-h- [80vh]  `}>
         <Navigation />
         <div className='heroBg pb-32 md:pb-72 pt-32 bg-heroImg bg-no-repeat bg-contain md:bg-auto [background-position:_center_bottom] md:min-h- [80vh]'>
           <div className='container'>
-            <h1 className='text-center text-[40px] md:text-[72px] font-extrabold max-w-[780px] mx-auto'>
+            <TypographyH1>
               Stay Connected with Students from all over the world.
-            </h1>
+            </TypographyH1>
+
             <a
               href='https://app.faraday.africa/signup'
               rel='noopener'
@@ -58,7 +61,7 @@ export default function Home() {
             key={i}
             className='container grid md:grid-cols-2 gap-6 my-24 md:px-16'
           >
-            <img
+            <Image
               src={info.image}
               alt={info.heading}
               className={`mx-auto ${i === 1 ? '' : 'md:order-1'}`}
@@ -76,7 +79,7 @@ export default function Home() {
 
         <Stories />
         <Partners />
-        <Journey />
+        {/* <Journey /> */}
       </main>
       <footer className='container mt-24'>
         <div className='grid gap-11 grid-cols-2 md:grid-cols-4'>
