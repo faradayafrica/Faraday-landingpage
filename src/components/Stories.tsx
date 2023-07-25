@@ -1,17 +1,17 @@
-import React, { useEffect, useState } from "react";
-import { base } from "../util.js";
-import SkeletonLoader from "./SkeletonLoader";
+import React, { useEffect, useState } from 'react';
+import { base } from '@/util';
+import SkeletonLoader from './SkeletonLoader';
 
 function Stories() {
-  const [stories, setStories] = useState([]);
+  const [stories, setStories] = useState<Array<any>>([]);
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    base("Social proof")
+    base('Social proof')
       .select({
-        view: "Grid view",
+        view: 'Grid view',
       })
-      .eachPage((records, fetchNextPage) => {
+      .eachPage((records: any, fetchNextPage) => {
         setStories(records);
         // console.log(records);
         fetchNextPage();
@@ -19,7 +19,7 @@ function Stories() {
   }, []);
 
   useEffect(() => {
-    let interval;
+    let interval: any;
 
     if (stories) {
       interval = setTimeout(() => {
