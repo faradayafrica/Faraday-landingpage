@@ -14,19 +14,11 @@ function Partners() {
       </h3>
 
       <div className='flex flex-col md:flex-row gap-6 mt-14'>
-        <Image src={BinaView} className='block mx-auto' alt='bina view' />
-        <Image className='block mx-auto' src={Shortened} alt='Shortened' />
-        <Image
-          className='block mx-auto'
-          src={Microsoft}
-          alt='Microsoft Learn Community, Unizik'
-        />
-        <Image
-          className='block mx-auto'
-          src={Github}
-          alt='Github NAU Community'
-        />
-        <Image className='block mx-auto' src={I4g} alt='I4g' />
+        <BinaView className='block mx-auto' />
+        <Shortened />
+        <Microsoft aria-label='Microsoft Learn Community, Unizik' />
+        <Github />
+        <I4g />
       </div>
     </section>
   );

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { base } from '@/util';
 import SkeletonLoader from '@/components/SkeletonLoader';
+import Image from 'next/image';
 
 function Stories() {
   const [stories, setStories] = useState<Array<any>>([]);
@@ -46,11 +47,13 @@ function Stories() {
         ) : (
           <div className='flex flex-col md:flex-row max-w-[320px] gap-5 mx-auto md:max-w-[max-content]'>
             <div className='border-b border-b-[#CFD9DE] md:border-b-0 md:border-r  md:border-b-[#CFD9DE] md:pr-12 md:w- full'>
-              <img
+              <Image
                 src={stories[count]?.fields?.profile_image[0].url}
                 alt={stories[count]?.fields?.name}
-                className='w-full md:w-max mx-auto max-w-[190px] md:max-w-[320px] md:mx-0'
+                className='w-full mx-auto max-w-[190px] md:w-[600px] md:h-[400px] md:mx-0'
                 loading='lazy'
+                width={400}
+                height={400}
               />
               <h4 className='font-extrabold text-[20px] my-3 text-center md:text-left md:max-w-[320px]'>
                 Meet {stories[count]?.fields?.introduction}

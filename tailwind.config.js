@@ -23,9 +23,9 @@ module.exports = {
         workSans: 'var(--font-workSans)',
         roboto: 'var(--font-roboto)',
       },
-      // backgroundImage: {
-      // heroImg: "url('./src/images/heroBg.svg')",
-      // },
+      backgroundImage: {
+        heroImg: "url('/images/heroBg.svg')",
+      },
     },
   },
   plugins: [],

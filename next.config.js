@@ -7,6 +7,15 @@ const nextConfig = {
     });
     return config;
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'v5.airtableusercontent.com',
+        port: '',
+      },
+    ],
+  },
   reactStrictMode: true,
 };
 
