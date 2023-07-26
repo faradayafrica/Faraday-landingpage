@@ -1,4 +1,4 @@
-import BlogCard from '@/components/BlogCard';
+import Footer from '@/components/Footer';
 import Navigation from '@/components/Navigation';
 import ReadLikely from '@/components/ReadLikely';
 import ReadMore from '@/components/ReadMore';
@@ -23,6 +23,7 @@ function BlogPage() {
 
         <ReadMore />
       </main>
+      <Footer />
     </>
   );
 }

@@ -13,10 +13,14 @@ function Tags() {
   return (
     <div className='flex gap-3'>
       {tags.map((tag, i) => (
-        <button key={i} className='border rounded-md border-[#BFC9D2] p-3 py-2'>
+        <button key={i} className='border rounded-lg border-[#BFC9D2] p-3 py-2'>
           {tag}
         </button>
       ))}
+
+      <button className='uppercase rounded-lg bg-[#101314] p-3 py-2 font-bold text-[#9AE2B3]'>
+        All tags
+      </button>
     </div>
   );
 }

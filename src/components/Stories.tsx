@@ -45,12 +45,12 @@ function Stories() {
         {stories.length === 0 ? (
           <SkeletonLoader />
         ) : (
-          <div className='flex justify-center md:grid md:grid-cols-12 md:flex-row max-w-[320px] gap-12 md:max-w-[max-content]'>
+          <div className='flex flex-col justify-center md:grid md:grid-cols-12 md:flex-row  gap-12 md:max-w-[max-content]'>
             <div className='md:w-full mx-auto md:col-span-4'>
               <Image
                 src={stories[count]?.fields?.profile_image[0].url}
                 alt={stories[count]?.fields?.name}
-                className='w-full mx-auto bg-cover md:h-[300px] md:mx-0'
+                className=' mx-auto bg-cover  md:h-[300px] md:mx-0'
                 // loading='lazy'
                 width={400}
                 height={300}
@@ -59,7 +59,7 @@ function Stories() {
                 Meet {stories[count]?.fields?.introduction}
               </h4>
             </div>
-            <div className='font-roboto md:col-span-8 border-b border-t-[#CFD9DE] md:border-b-0 md:border-l md:pl-12  md:border-b-[#CFD9DE]'>
+            <div className='font-roboto md:col-span-8 border-t md:border-t-0 border-t-[#CFD9DE] md:border-b-0 md:border-l md:pl-12  md:border-b-[#CFD9DE]'>
               <blockquote className='text-center md:text-left font-medium [line-height:_36px] md:text-[28px]'>
                 {stories[count]?.fields?.quote}
               </blockquote>
