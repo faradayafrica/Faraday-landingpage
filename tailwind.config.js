@@ -18,6 +18,7 @@ module.exports = {
         textBlack: '#3F3F41',
         storiesBg: '#3F3F41',
         journeyBg: '#FBF7F4',
+        brandNight: '#6C757D',
       },
       fontFamily: {
         workSans: 'var(--font-workSans)',
