@@ -1,13 +1,13 @@
 import Link from 'next/link';
 import React from 'react';
-import Logo from '../images/logo.svg';
+import Logo from '../images/logo-dark.svg';
 import Twitter from '../images/twitter.svg';
 import Github from '../images/github.svg';
 import Youtube from '../images/youtube.svg';
 
 function Footer() {
   return (
-    <footer className='container mt-24'>
+    <footer className='container pt-24 bg-[url(/images/footer-bg.png)]'>
       <div className='grid gap-11 grid-cols-2 md:grid-cols-4'>
         <div className='col-span-2 md:col-auto'>
           <h4 className='font-extrabold text-2xl'>
@@ -20,7 +20,9 @@ function Footer() {
         <div className='col-start-2 md:col-auto'>
           <h5 className='font-medium'>Product</h5>
           <ul className='mt-1'>
-            <li className='text-[#3f3f41af] cursor-pointer'>Sign up</li>
+            <li className='cursor-pointer'>
+              <Link href={'https://app.faraday.africa/signup'}>Sign up</Link>
+            </li>
             {/* <li>
           <a href=''>Download app</a>
         </li> */}
@@ -29,12 +31,12 @@ function Footer() {
         <div className='col-start-1 row-start-2 md:col-start-3 md:row-start-1'>
           <h5 className='font-medium'>Company</h5>
           <ul className='mt-1'>
-            <li className='text-[#3f3f41af] cursor-pointer'>About Faraday</li>
+            <li className='cursor-pointer'>About Faraday</li>
             {/* <li>
           <a href=''>Advertise with us</a>
         </li> */}
-            <li className='text-[#3f3f41af] cursor-pointer'>Terms of use</li>
-            <li className='text-[#3f3f41af] cursor-pointer'>Privacy policy</li>
+            <li className='cursor-pointer'>Terms of use</li>
+            <li className='cursor-pointer'>Privacy policy</li>
           </ul>
         </div>
         <div className=''>
@@ -61,21 +63,20 @@ function Footer() {
       </div>
 
       <div className='flex justify-between items-center border-t border-t-[#CFD9DE] py-5 mt-12'>
-        <Link href={'/'}>
-          <Logo />
+        <Link href={'/'} className='w-full'>
+          <Logo className='w-[120px]' />
         </Link>
 
         <div className='flex items-center gap-3'>
           <Link href='https://github.com/faradayafrica'>
-            <Github />
+            <Github className='w-[24px]' />
           </Link>
           <Link href='https://www.youtube.com/channel/UCtNFJ9q1z52ICj3FqeyHjxw'>
-            <Youtube />
+            <Youtube className='w-[24px]' />
           </Link>
           <Link href='https://twitter.com/faradayafrica'>
-            <Twitter />
+            <Twitter className='w-[24px]' />
           </Link>
-          Logo
         </div>
       </div>
     </footer>

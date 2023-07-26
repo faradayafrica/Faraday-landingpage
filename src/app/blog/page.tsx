@@ -1,6 +1,7 @@
 import BlogCard from '@/components/BlogCard';
 import Navigation from '@/components/Navigation';
 import ReadLikely from '@/components/ReadLikely';
+import ReadMore from '@/components/ReadMore';
 import { TypographyH1 } from '@/components/Typography';
 import { Metadata } from 'next';
 import React from 'react';
@@ -20,14 +21,7 @@ function BlogPage() {
 
         <ReadLikely />
 
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
+        <ReadMore />
       </main>
     </>
   );

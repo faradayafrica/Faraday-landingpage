@@ -4,7 +4,6 @@ import Shortened from '../images/shortened.svg';
 import Microsoft from '../images/microsoft.svg';
 import Github from '../images/github-nau.svg';
 import I4g from '../images/i4g.svg';
-import Image from 'next/image';
 
 function Partners() {
   return (
@@ -14,11 +13,14 @@ function Partners() {
       </h3>
 
       <div className='flex flex-col md:flex-row gap-6 mt-14'>
-        <BinaView className='block mx-auto' />
-        <Shortened />
-        <Microsoft aria-label='Microsoft Learn Community, Unizik' />
-        <Github />
-        <I4g />
+        <BinaView className='h-[57px] block mx-auto md:w-[20%]' />
+        <Shortened className='h-[57px] block mx-auto md:w-[20%]' />
+        <Microsoft
+          className='h-[57px] block mx-auto md:w-[20%]'
+          aria-label='Microsoft Learn Community, Unizik'
+        />
+        <Github className='h-[57px] block mx-auto md:w-[20%]' />
+        <I4g className='h-[57px] block mx-auto md:w-[20%]' />
       </div>
     </section>
   );

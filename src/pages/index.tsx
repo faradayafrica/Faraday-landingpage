@@ -4,10 +4,11 @@ import MakeFriends from '../images/make-friends.png';
 import NeverStuck from '../images/never-stuck.png';
 import Stories from '@/components/Stories';
 import Partners from '@/components/Partners';
-// import Journey from '@/images/Journey';
 import Image from 'next/image';
 import { TypographyH1 } from '@/components/Typography';
 import Footer from '@/components/Footer';
+import Head from 'next/head';
+import Journey from '@/components/Journey';
 
 const data = [
   {
@@ -33,6 +34,10 @@ const data = [
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Faraday Africa</title>
+      </Head>
+
       <header className={`bg-heroBg text-textBlack md:min-h- [80vh]  `}>
         <Navigation />
         <div className='heroBg pb-32 md:pb-72 pt-32 bg-heroImg bg-no-repeat bg-contain md:bg-auto [background-position:_center_bottom] md:min-h- [80vh]'>
@@ -76,7 +81,7 @@ export default function Home() {
 
         <Stories />
         <Partners />
-        {/* <Journey /> */}
+        <Journey />
       </main>
 
       <Footer />

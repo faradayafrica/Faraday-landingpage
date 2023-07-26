@@ -7,8 +7,9 @@ function BlogCard() {
       <Image
         src={'/images/blog/demo-image.png'}
         alt='demo image'
-        width={200}
+        width={500}
         height={300}
+        objectFit='cover'
       />
       <div className='bg-white p-5'>
         <div className='flex gap-3 text-[#2C974B]'>
