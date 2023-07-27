@@ -35,26 +35,26 @@ export default function BlogDetails({ params }: { params: { slug: string } }) {
 
           <div className='space-y-6'>
             <p>
-              This might seem obvious, but it's one step that many companies
-              overlook. Candidates may be tempted to join a team because they
-              love the job, but a poor salary could put them off. On the other
-              hand, they could join the team and not receive a pay rise for
-              another five years. You need to stay competitive when it comes to
-              keeping hold of your best salespeople, which means you'll need to
-              offer a competitive compensation plan. This can include base
-              salaries, commissions, bonuses, and other incentives through
-              competition. Whilst too great an emphasis on competition can
-              create a bad working environment, getting teams to compete for
-              team rewards can be a great motivator, encourage team spirit, and
-              show that you value their achievements. Provide Opportunities for
-              Growth Top talent may not start off at the top. In fact, they may
-              have worked their way up the career ladder to get to where they
-              are. They want to know that you can offer them further growth
-              within their career. Offer them access to additional training
-              courses like additional certifications, 1-1 coaching from
-              management, or access to sales conferences and industry seminars.
-              This is not only satisfying for them but expanding their skillset
-              can be a huge help to your business.
+              This might seem obvious, but it&apos;s one step that many
+              companies overlook. Candidates may be tempted to join a team
+              because they love the job, but a poor salary could put them off.
+              On the other hand, they could join the team and not receive a pay
+              rise for another five years. You need to stay competitive when it
+              comes to keeping hold of your best salespeople, which means
+              you&apos;ll need to offer a competitive compensation plan. This
+              can include base salaries, commissions, bonuses, and other
+              incentives through competition. Whilst too great an emphasis on
+              competition can create a bad working environment, getting teams to
+              compete for team rewards can be a great motivator, encourage team
+              spirit, and show that you value their achievements. Provide
+              Opportunities for Growth Top talent may not start off at the top.
+              In fact, they may have worked their way up the career ladder to
+              get to where they are. They want to know that you can offer them
+              further growth within their career. Offer them access to
+              additional training courses like additional certifications, 1-1
+              coaching from management, or access to sales conferences and
+              industry seminars. This is not only satisfying for them but
+              expanding their skillset can be a huge help to your business.
             </p>
             <div>
               <TypographyH2>How we play</TypographyH2>
@@ -71,7 +71,7 @@ export default function BlogDetails({ params }: { params: { slug: string } }) {
                 positive work environment can go a long way in retaining top
                 sales talent. Encourage collaboration and teamwork. Recognize
                 and reward achievements when you see them, and promote a culture
-                of openness and transparency—whether you're working at the
+                of openness and transparency—whether you&apos;re working at the
                 office or remotely. This can be particularly important when it
                 comes to sales. There can always be an element of competition
                 and comparison, especially when teams are trying to push as many
