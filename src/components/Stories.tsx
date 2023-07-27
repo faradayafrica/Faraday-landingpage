@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { base } from '@/util';
+import { base, workSans } from '@/util';
 import SkeletonLoader from '@/components/SkeletonLoader';
 import Image from 'next/image';
+import { TypographyH3 } from './Typography';
 
 function Stories() {
   const [stories, setStories] = useState<Array<any>>([]);
@@ -39,9 +40,9 @@ function Stories() {
   return (
     <section className='bg-storiesBg text-white py-24'>
       <div className='container'>
-        <h3 className='text-center font-extrabold text-[28px] md:text-[48px] md:text-left mb-4'>
+        <TypographyH3 className='text-center font-extrabold text-[28px] md:text-[48px] md:text-left mb-4'>
           Student Stories
-        </h3>
+        </TypographyH3>
         {stories.length === 0 ? (
           <SkeletonLoader />
         ) : (
@@ -55,11 +56,15 @@ function Stories() {
                 width={400}
                 height={300}
               />
-              <h4 className='font-extrabold text-[20px] my-3 text-center md:text-left md:max-w-[320px]'>
+              <h4
+                className={`font-extrabold ${workSans.className} text-[20px] my-3 text-center md:text-left md:max-w-[320px]`}
+              >
                 Meet {stories[count]?.fields?.introduction}
               </h4>
             </div>
-            <div className='font-roboto md:col-span-8 border-t md:border-t-0 border-t-[#CFD9DE] md:border-b-0 md:border-l md:pl-12  md:border-b-[#CFD9DE]'>
+            <div
+              className={`${workSans.className} md:col-span-8 border-t md:border-t-0 border-t-[#CFD9DE] md:border-b-0 md:border-l md:pl-12  md:border-b-[#CFD9DE]`}
+            >
               <blockquote className='text-center md:text-left font-medium [line-height:_36px] md:text-[28px]'>
                 {stories[count]?.fields?.quote}
               </blockquote>

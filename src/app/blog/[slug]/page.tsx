@@ -1,5 +1,8 @@
+import CommentComp from '@/components/CommentComp';
 import Footer from '@/components/Footer';
 import Navigation from '@/components/Navigation';
+import ReadLikely from '@/components/ReadLikely';
+import ShareLink from '@/components/ShareLink';
 import { TypographyH1, TypographyH2 } from '@/components/Typography';
 import Image from 'next/image';
 
@@ -8,8 +11,8 @@ export default function BlogDetails({ params }: { params: { slug: string } }) {
     <>
       <Navigation />
 
-      <main className='container mt-14'>
-        <article className='max-w-[800px]'>
+      <main className='container my-14'>
+        <article className='max-w-[800px] my-14'>
           <div className='space-y-5'>
             <TypographyH1 className='text-left ml-0 text-2xl md:text-[48px] leading-[120%]'>
               What building an ed-tech platform is like. How we do it.
@@ -86,6 +89,12 @@ export default function BlogDetails({ params }: { params: { slug: string } }) {
             </div>
           </div>
         </article>
+
+        <ShareLink />
+
+        <ReadLikely />
+
+        <CommentComp />
       </main>
 
       <Footer />

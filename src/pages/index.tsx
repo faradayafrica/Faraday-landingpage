@@ -5,7 +5,7 @@ import NeverStuck from '../images/never-stuck.png';
 import Stories from '@/components/Stories';
 import Partners from '@/components/Partners';
 import Image from 'next/image';
-import { TypographyH1 } from '@/components/Typography';
+import { TypographyH1, TypographyH2 } from '@/components/Typography';
 import Footer from '@/components/Footer';
 import Head from 'next/head';
 import Journey from '@/components/Journey';
@@ -69,9 +69,9 @@ export default function Home() {
               className={`mx-auto ${i === 1 ? '' : 'md:order-1'}`}
             />
             <div className='my-auto'>
-              <h2 className='font-extrabold text-[28px] md:text-[48px] mb-4'>
+              <TypographyH2 className='font-extrabold text-[28px] md:text-[48px] mb-4'>
                 {info.heading}
-              </h2>
+              </TypographyH2>
               <p className='text-lg [line-height:_30px] font-roboto'>
                 {info.description}
               </p>

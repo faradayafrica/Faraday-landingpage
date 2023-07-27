@@ -22,7 +22,6 @@ module.exports = {
       },
       fontFamily: {
         workSans: 'var(--font-workSans)',
-        roboto: 'var(--font-roboto)',
       },
       backgroundImage: {
         heroImg: "url('/images/heroBg.svg')",

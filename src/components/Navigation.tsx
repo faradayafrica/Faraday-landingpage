@@ -4,13 +4,13 @@ import Link from 'next/link';
 
 export default function Navigation() {
   return (
-    <nav className='flex items-center justify-between container pt-3  font-bold'>
+    <nav className='flex items-center justify-between container pt-3  font-semibold'>
       <Link href={'/'}>
         <Logo className='w-[120px]' />
       </Link>
 
       <ul className='flex gap-6 justify-between font-workSans'>
-        <li className='font-workSans'>Product Page</li>
+        <li className=''>Product Page</li>
         <li>The Faraday App</li>
         <li>About</li>
         <li>
