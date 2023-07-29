@@ -49,7 +49,7 @@ export default function Home() {
             <a
               href='https://app.faraday.africa/signup'
               rel='noopener'
-              className='block bg-brandColor text-white font-bold font-roboto mx-auto px-8 py-4 mt-8 md:mt-10 w-max'
+              className='block bg-brandColor hover:bg-brandColor/95 rounded-full text-white font-bold font-roboto mx-auto px-8 py-4 mt-8 md:mt-10 w-max'
             >
               Sign up now for free
             </a>

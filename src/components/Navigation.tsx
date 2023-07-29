@@ -12,15 +12,20 @@ export default function Navigation() {
       <ul className='flex gap-6 justify-between font-workSans'>
         <li className=''>Product Page</li>
         <li>The Faraday App</li>
-        <li>About</li>
+        <li>
+          <Link href='https://about.faraday.africa/'>About</Link>
+        </li>
         <li>
           <Link href={'/blog'}>Blog</Link>
         </li>
       </ul>
 
-      <button className='py-2 px-6'>
-        <a href='https://app.faraday.africa/login'>Login</a>
-      </button>
+      <Link
+        href={'https://app.faraday.africa/signup'}
+        className='bg-brandColor text-white hover:bg-brandColor/95 rounded-full py-2 px-6'
+      >
+        Signup
+      </Link>
     </nav>
   );
 }
