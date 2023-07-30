@@ -11,7 +11,7 @@ function ReadLikely() {
         <Smile className='w-[35px]' />
       </TypographyH2>
 
-      <div className='flex gap-4 mt-[30px]'>
+      <div className='flex flex-col md:flex-row gap-4 mt-[30px]'>
         <BlogCard featured />
         <BlogCard featured />
       </div>

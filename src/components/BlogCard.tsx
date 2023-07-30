@@ -33,11 +33,18 @@ function BlogCard({ featured }: { featured?: boolean }) {
             <span className='bg-brandColor w-[4rem] h-[.5rem] block'></span>
           )}
 
-          <p className={`${featured ? 'text-base' : 'text-sm text-truncate'} `}>
-            Starting out building a platform with little to no experience is a
-            daunting task that not everyone has the courage to do...Starting out
-            building a platform with little to no experience
-          </p>
+          {featured ? (
+            <p className='text-base'>
+              Starting out building a platform with little to no experience is a
+              daunting task that not everyone has the courage to do...Starting
+              out building a platform with little to no experience
+            </p>
+          ) : (
+            <p className='text-sm text-truncate'>
+              Starting out building a platform with little to no experience is a
+              daunting task that not everyone has the courage to do...
+            </p>
+          )}
 
           <div className='flex justify-between text-sm'>
             <p>Devgenix</p>
