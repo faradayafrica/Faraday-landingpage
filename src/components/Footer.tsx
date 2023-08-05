@@ -24,18 +24,18 @@ function Footer() {
               <li className='cursor-pointer'>
                 <Link href={'https://app.faraday.africa/signup'}>Sign up</Link>
               </li>
-              {/* <li>
-          <a href=''>Download app</a>
-        </li> */}
+              <li>
+                <a href='#'>Download app</a>
+              </li>
             </ul>
           </div>
           <div className='col-start-1 row-start-2 md:col-start-3 md:row-start-1'>
             <h5 className='font-medium'>Company</h5>
             <ul className='mt-1'>
               <li className='cursor-pointer'>About Faraday</li>
-              {/* <li>
-          <a href=''>Advertise with us</a>
-        </li> */}
+              <li>
+                <a href='#'>Advertise with us</a>
+              </li>
               <li className='cursor-pointer'>Terms of use</li>
               <li className='cursor-pointer'>Privacy policy</li>
             </ul>
@@ -55,6 +55,9 @@ function Footer() {
               </li>
               <li>
                 <a href='https://events.faraday.africa/gallery'>Gallery</a>
+              </li>
+              <li>
+                <a href='#'>Social impact</a>
               </li>
               {/* <li>
           <a href=''>Social impact</a>

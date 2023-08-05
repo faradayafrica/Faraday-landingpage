@@ -26,7 +26,7 @@ const links = [
 export default function Navigation() {
   const [hamClicked, setHamClicked] = useState(false);
   return (
-    <nav className=' flex items-center justify-between container pt-3  font-semibold'>
+    <nav className=' flex items-center justify-between container pt-4  font-semibold'>
       <div className='md:hidden flex justify-between items-center w-full '>
         <Link href={'/'} className='block'>
           <Logo className='w-[120px]' />
@@ -38,10 +38,11 @@ export default function Navigation() {
           <span className='w-3 h-[2px] bg-black rounded-sm block  ml-auto'></span>
         </button>
 
+        {/* Mobile */}
         {hamClicked && (
-          <div className='fixed md:hidden w-full bottom-0 left-0 h-screen bg-[rgb(252,224,176)] bg-[linear-gradient(146deg,_rgba(252,224,176,1)_0%,_rgba(255,255,255,0.8847303029052023)_56%,_rgba(154,255,255,1)_100%)] flex justify-center flex-col'>
+          <div className='fixed md:hidden w-full bottom-0 left-0 h-screen bg-[rgb(252,224,176)] bg-[linear-gradient(146deg,_rgba(252,224,176,1)_0%,_rgba(255,255,255,0.8847303029052023)_56%,_rgba(154,255,255,1)_100%)] flex justify-center flex-col z-[1000]'>
             <div className='container relative'>
-              <div className='fixed top-0 w-[inherit] flex self-start justify-between items-center pt-3'>
+              <div className='fixed top-0 w-[inherit] flex self-start justify-between items-center pt-4'>
                 <Link href={'/'} className='block'>
                   <Logo className='w-[120px]' />
                 </Link>

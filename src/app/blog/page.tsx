@@ -1,5 +1,3 @@
-import Footer from '@/components/Footer';
-import Navigation from '@/components/Navigation';
 import ReadLikely from '@/components/ReadLikely';
 import ReadMore from '@/components/ReadMore';
 import { TypographyH1 } from '@/components/Typography';
@@ -13,7 +11,6 @@ export const metadata: Metadata = {
 function BlogPage() {
   return (
     <>
-      <Navigation />
       <main className='container my-14'>
         <TypographyH1>
           The Faraday <span className='text-brandColor'>Blog</span>
@@ -23,7 +20,6 @@ function BlogPage() {
 
         <ReadMore />
       </main>
-      <Footer />
     </>
   );
 }
