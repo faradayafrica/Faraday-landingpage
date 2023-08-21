@@ -1,6 +1,6 @@
 import React from 'react';
-import { TypographyH1, TypographyH3 } from '@/components/Typography';
-import BlogCard from '@/components/BlogCard';
+import { TypographyH1, TypographyH3 } from '@/components/typography';
+import BlogCard from '@/components/blog/BlogCard';
 import Tags from '@/components/Tags';
 import SearchIcon from '@/images/search-icon.svg';
 import { Metadata } from 'next';

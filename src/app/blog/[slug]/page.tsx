@@ -1,7 +1,7 @@
 import CommentComp from '@/components/CommentComp';
-import ReadLikely from '@/components/ReadLikely';
+import ReadLikely from '@/components/blog/ReadLikely';
 import ShareLink from '@/components/ShareLink';
-import { TypographyH1, TypographyH2 } from '@/components/Typography';
+import { TypographyH1, TypographyH2 } from '@/components/typography';
 import Image from 'next/image';
 
 export default function BlogDetails({ params }: { params: { slug: string } }) {

@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { base, workSans } from '@/util';
 import SkeletonLoader from '@/components/SkeletonLoader';
 import Image from 'next/image';
-import { TypographyH3 } from './Typography';
+import { TypographyH3 } from '../typography';
 
-function Stories() {
+function PeopleSaying() {
   const [stories, setStories] = useState<Array<any>>([]);
   const [count, setCount] = useState(0);
 
@@ -79,4 +79,4 @@ function Stories() {
   );
 }
 
-export default Stories;
+export default PeopleSaying;

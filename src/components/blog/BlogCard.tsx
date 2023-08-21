@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import { TypographyH3 } from './Typography';
+import { TypographyH3 } from '../typography';
 import Link from 'next/link';
 
 function BlogCard({ featured }: { featured?: boolean }) {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { TypographyH2 } from './Typography';
+import { TypographyH2 } from '../typography';
 import BlogCard from './BlogCard';
 import Smile from '@/images/smile.svg';
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import { TypographyH3 } from './Typography';
-import Tags from './Tags';
+import { TypographyH3 } from '../typography';
+import Tags from '../Tags';
 import BlogCard from './BlogCard';
 import Smile from '@/images/smile.svg';
 import TagIcon from '@/images/tab-icon.svg';

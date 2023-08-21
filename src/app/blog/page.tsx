@@ -1,6 +1,6 @@
-import ReadLikely from '@/components/ReadLikely';
-import ReadMore from '@/components/ReadMore';
-import { TypographyH1 } from '@/components/Typography';
+import ReadLikely from '@/components/blog/ReadLikely';
+import ReadMore from '@/components/blog/ReadMore';
+import { TypographyH1 } from '@/components/typography';
 import { Metadata } from 'next';
 import React from 'react';
 
