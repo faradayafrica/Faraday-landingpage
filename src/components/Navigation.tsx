@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Logo from '../images/logo.svg';
 import Link from 'next/link';
+import { cn } from '@/util';
 
 const links = [
   {
@@ -23,10 +24,15 @@ const links = [
   },
 ];
 
-export default function Navigation() {
+export default function Navigation({ isHome }: { isHome: boolean }) {
   const [hamClicked, setHamClicked] = useState(false);
   return (
-    <nav className=' flex items-center justify-between container pt-4  font-semibold'>
+    <nav
+      className={cn(
+        ` flex items-center justify-between container pt-4  font-semibold`,
+        isHome && 'fixed top-0 z-[1000]'
+      )}
+    >
       <div className='md:hidden flex justify-between items-center w-full '>
         <Link href={'/'} className='block'>
           <Logo className='w-[120px]' />

@@ -13,7 +13,7 @@ function Welcome() {
 
       <div className='absolute bottom-0 left-0 flex p-4 gap-3 mx-auto w-full justify-center'>
         <p className='font-medium'>Powered by</p>
-        <MicrosoftStartupsIcons />
+        <MicrosoftStartupsIcons width={100} />
       </div>
     </div>
   );
