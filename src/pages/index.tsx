@@ -20,7 +20,7 @@ export default function Home() {
       <Navigation isHome />
 
       <div className='scrollbar-hide-scroll snap-y snap-mandatory overflow-y-scroll h-screen'>
-        <SectionContainer className='relative bg-no-repeat bg-contain bg-bottom items-start'>
+        <SectionContainer className='relative !p-0 bg-no-repeat bg-contain bg-bottom items-start'>
           <Hero />
         </SectionContainer>
         <SectionContainer className='relative'>
@@ -29,10 +29,10 @@ export default function Home() {
         <SectionContainer className='relative md:p-0'>
           <NeverStuck />
         </SectionContainer>
-        <SectionContainer className='relative'>
+        <SectionContainer className='relative home-gradient'>
           <AskQuestion />
         </SectionContainer>
-        <SectionContainer className='relative'>
+        <SectionContainer className='relative home-gradient'>
           <LatestPost />
         </SectionContainer>
         <SectionContainer className='relative'>

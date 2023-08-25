@@ -49,6 +49,11 @@ html {
   scrollbar-width: none; /* Firefox */
 }
 
+.home-gradient {
+  background: rgb(252,224,186);
+background: linear-gradient(140deg, rgba(252,224,186,1) 0%, rgba(255,255,255,0.8884803921568627) 44%, rgba(154,255,255,1) 100%);
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

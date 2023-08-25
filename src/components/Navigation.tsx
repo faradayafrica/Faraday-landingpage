@@ -24,7 +24,7 @@ const links = [
   },
 ];
 
-export default function Navigation({ isHome }: { isHome: boolean }) {
+export default function Navigation({ isHome }: { isHome?: boolean }) {
   const [hamClicked, setHamClicked] = useState(false);
   return (
     <nav

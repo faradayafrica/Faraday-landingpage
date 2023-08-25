@@ -10,7 +10,7 @@ function TypographyH1({ children, className }: TypographyH1Props) {
   return (
     <h1
       className={cn(
-        `text-center text-[40px] md:text-[72px] ${workSans.className} font-extrabold max-w-[780px] mx-auto`,
+        `text-[40px] md:text-[72px] ${workSans.className} font-extrabold`,
         className
       )}
     >

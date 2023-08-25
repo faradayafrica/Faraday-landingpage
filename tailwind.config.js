@@ -19,6 +19,7 @@ module.exports = {
         storiesBg: '#3F3F41',
         journeyBg: '#FBF7F4',
         brandNight: '#6C757D',
+        univast2: '#36454F',
       },
       fontFamily: {
         workSans: 'var(--font-workSans)',
