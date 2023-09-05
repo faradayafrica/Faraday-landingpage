@@ -3,9 +3,18 @@ import React from 'react';
 import { TypographyH3 } from '../typography';
 import Link from 'next/link';
 
-function BlogCard({ featured }: { featured?: boolean }) {
+function BlogCard({
+  featured,
+  isHome,
+}: {
+  featured?: boolean;
+  isHome?: boolean;
+}) {
   return (
-    <Link href='/blog/blog-details'>
+    <Link
+      href='/blog/blog-details'
+      className={`${isHome ? 'w-[400px] font-[]' : ''}`}
+    >
       <div className='rounded-3xl overflow-hidden shadow-[3px_4px_50px_0px_rgba(0,0,0,0.10)]'>
         <Image
           src={'/images/blog/demo-image.png'}

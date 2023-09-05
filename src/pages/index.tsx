@@ -17,8 +17,6 @@ export default function Home() {
         <title>Faraday Africa</title>
       </Head>
 
-      <Navigation isHome />
-
       <div className='scrollbar-hide-scroll snap-y snap-mandatory overflow-y-scroll h-screen'>
         <SectionContainer className='relative !p-0 bg-no-repeat bg-contain bg-bottom items-start'>
           <Hero />
@@ -32,7 +30,7 @@ export default function Home() {
         <SectionContainer className='relative home-gradient'>
           <AskQuestion />
         </SectionContainer>
-        <SectionContainer className='relative home-gradient'>
+        <SectionContainer className='relative home-gradient md:pr-0'>
           <LatestPost />
         </SectionContainer>
         <SectionContainer className='relative'>

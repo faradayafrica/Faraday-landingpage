@@ -30,7 +30,7 @@ export default function Navigation({ isHome }: { isHome?: boolean }) {
     <nav
       className={cn(
         ` flex items-center justify-between container pt-4  font-semibold`,
-        isHome && 'fixed top-0 z-[1000]'
+        isHome && 'absolute top-0 z-[1000]'
       )}
     >
       <div className='md:hidden flex justify-between items-center w-full '>

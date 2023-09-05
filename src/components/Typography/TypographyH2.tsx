@@ -10,7 +10,7 @@ function TypographyH2({ children, className }: TypographyH2Props) {
   return (
     <h2
       className={cn(
-        `text-grey-700 text-lg font-extrabold  ${workSans.className} md:text-5xl`,
+        `text-grey-700 text-2xl font-extrabold  ${workSans.className} md:text-5xl`,
         className
       )}
     >

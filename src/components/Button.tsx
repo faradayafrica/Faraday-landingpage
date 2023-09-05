@@ -1,42 +1,64 @@
-import React from 'react';
+import Link from 'next/link';
+import * as React from 'react';
 
-type ButtonProps = React.ComponentProps<'button'> &
-  React.Component<'button'> & {
-    children: React.ReactNode;
-  };
-type AnchorProps = React.ComponentProps<'a'> &
-  React.Component<'a'> & {
-    children: React.ReactNode;
-  };
-
-enum ButtonType {
-  a = 'a',
-  button = 'button',
-}
-
-type Props =
-  | ({
-      as: ButtonType.a;
-    } & AnchorProps)
-  | ({
-      as: ButtonType.button;
-    } & ButtonProps);
-
-//   <a
-//   href='https://app.faraday.africa/signup'
-//   rel='noopener'
-//   className='block bg-brandColor hover:bg-brandColor/95 rounded-full text-white font-bold font-roboto mx-auto px-8 py-4 mt-8 md:mt-10 w-max'
-// >
-//   Sign up now for free
-// </a>
-
-const Button = ({ children, as, ...props }: Props) => {
-  return (
-    <>
-      {as === ButtonType.a && <a {...props}>{children}</a>}
-      {as === ButtonType.button && <button {...props}>{children}</button>}
-    </>
-  );
+type BaseProps = {
+  children: React.ReactNode;
+  className?: string;
+  styleType: 'primary' | 'secondary' | 'tertiary';
 };
 
-export default Button;
+type ButtonAsButton = BaseProps &
+  Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, keyof BaseProps> & {
+    as?: 'button';
+  };
+
+type ButtonAsUnstyled = Omit<ButtonAsButton, 'as' | 'styleType'> & {
+  as: 'unstyled';
+  styleType?: BaseProps['styleType'];
+};
+
+type ButtonAsLink = BaseProps & {
+  as: 'link';
+};
+
+type ButtonAsExternal = BaseProps &
+  Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, keyof BaseProps> & {
+    as: 'externalLink';
+  };
+
+type ButtonProps =
+  | ButtonAsButton
+  | ButtonAsExternal
+  | ButtonAsLink
+  | ButtonAsUnstyled;
+
+export default function Button(props: ButtonProps): JSX.Element {
+  const allClassNames = `${props.styleType ? props.styleType : ''} ${
+    props.className ? props.className : ''
+  }`;
+
+  if (props.as === 'link') {
+    // don't pass unnecessary props to component
+    const { className, styleType, as, ...rest } = props;
+    return <Link href='' className={allClassNames} {...rest} />;
+  } else if (props.as === 'externalLink') {
+    const { className, styleType, as, ...rest } = props;
+    return (
+      <a
+        className={allClassNames}
+        // provide good + secure defaults while still allowing them to be overwritten
+        target='_blank'
+        rel='noopener noreferrer'
+        {...rest}
+      >
+        {props.children}
+      </a>
+    );
+  } else if (props.as === 'unstyled') {
+    const { className, styleType, as, ...rest } = props;
+    return <button className={className} {...rest} />;
+  } else {
+    const { className, styleType, as, ...rest } = props;
+    return <button className={allClassNames} {...rest} />;
+  }
+}
