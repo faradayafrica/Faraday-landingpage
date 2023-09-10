@@ -10,7 +10,7 @@ const WannaRead = () => {
         <p>Our Blog</p>
       </div>
 
-      <div className='scroll-bar flex overflow-x-auto gap-4 mt-12'>
+            <div className='scroll-bar flex overflow-x-auto gap-4 mt-12'>
         <BlogCard featured isHome />
         <BlogCard featured isHome />
         <BlogCard featured isHome />

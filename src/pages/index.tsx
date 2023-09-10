@@ -9,6 +9,8 @@ import AskQuestion from '@/components/homepage/AskQuestion';
 import LatestPost from '@/components/homepage/LatestPost';
 import WannaRead from '@/components/homepage/WannaRead';
 import PeopleSaying from '@/components/homepage/PeopleSaying';
+import AIBot from '@/components/homepage/AIBot';
+import WhyNel from '@/components/homepage/WhyNel';
 
 export default function Home() {
   return (
@@ -27,21 +29,29 @@ export default function Home() {
         <SectionContainer className='relative md:p-0'>
           <NeverStuck />
         </SectionContainer>
-        <SectionContainer className='relative home-gradient'>
+        <SectionContainer className='md:p-0'>
+          <AIBot />
+        </SectionContainer>
+        <SectionContainer className='home-gradient'>
           <AskQuestion />
         </SectionContainer>
-        <SectionContainer className='relative home-gradient md:pr-0'>
+        <SectionContainer className='md:p-0'>
+          <WhyNel />
+        </SectionContainer>
+        <SectionContainer className='home-gradient md:pr-0'>
           <LatestPost />
         </SectionContainer>
-        <SectionContainer className='relative'>
+        <SectionContainer>
           <WannaRead />
         </SectionContainer>
-        <SectionContainer className='relative'>
+        <SectionContainer>
           <PeopleSaying />
+        </SectionContainer>
+        <SectionContainer className='bg-[url(/images/bg-pattern-footer.png)] !min-h-fit bg-[#333B47]'>
+          <Footer />
         </SectionContainer>
       </div>
 
-      <Footer />
     </>
   );
 }
