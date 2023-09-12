@@ -5,9 +5,15 @@ import Twitter from '../images/twitter.svg';
 import Github from '../images/github.svg';
 import Youtube from '../images/youtube.svg';
 
-function Footer() {
+function Footer({ isHome }: { isHome?: boolean }) {
   return (
-    <footer className='flex-1 text-white'>
+    <footer
+      className={`flex-1 ${
+        isHome
+          ? 'text-white'
+          : 'text-black bg-[url(/images/footer-bg.png)] py-16 bg-white'
+      }`}
+    >
       <div className='container'>
         <div className='grid gap-11 grid-cols-2 md:grid-cols-4'>
           <div className='col-span-2 md:col-auto'>
@@ -68,18 +74,30 @@ function Footer() {
 
         <div className='flex justify-between items-center border-t border-t-[#CFD9DE] py-5 mt-12'>
           <Link href={'/'} className='w-full'>
-            <Logo className='w-[120px]' fill="white" />
+            <Logo
+              className='w-[120px]'
+              fill={`${isHome ? 'white' : '#3F3F41'}`}
+            />
           </Link>
 
           <div className='flex items-center gap-3'>
             <Link href='https://github.com/faradayafrica'>
-              <Github className='w-[24px]' fill="#fff" />
+              <Github
+                className='w-[24px]'
+                fill={`${isHome ? 'white' : '#3F3F41'}`}
+              />
             </Link>
             <Link href='https://www.youtube.com/channel/UCtNFJ9q1z52ICj3FqeyHjxw'>
-              <Youtube className='w-[24px]' />
+              <Youtube
+                className='w-[24px]'
+                fill={`${isHome ? 'white' : '#3F3F41'}`}
+              />
             </Link>
             <Link href='https://twitter.com/faradayafrica'>
-              <Twitter className='w-[24px]' />
+              <Twitter
+                className='w-[24px]'
+                fill={`${isHome ? 'white' : '#3F3F41'}`}
+              />
             </Link>
           </div>
         </div>

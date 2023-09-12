@@ -13,7 +13,7 @@ function BlogCard({
   return (
     <Link
       href='/blog/blog-details'
-      className={`${isHome ? 'w-[400px] font-[]' : ''}`}
+      className={`${isHome ? 'w-[400px] inline-block font-[]' : ''}`}
     >
       <div className='rounded-3xl overflow-hidden shadow-[3px_4px_50px_0px_rgba(0,0,0,0.10)]'>
         <Image

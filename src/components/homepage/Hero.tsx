@@ -18,7 +18,7 @@ const Hero = () => {
           Conquer your academic challenges, achieve greatness and celebrate your
           triumphs, hand in hand with other university students across Nigeria.
         </p>
-        <Button as='button' styleType='primary'>
+        <Button as='button' variant='primary'>
           Get started
         </Button>
       </div>

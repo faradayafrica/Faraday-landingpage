@@ -4,7 +4,7 @@ import * as React from 'react';
 type BaseProps = {
   children: React.ReactNode;
   className?: string;
-  styleType: 'primary' | 'secondary' | 'tertiary';
+  variant: 'primary' | 'secondary' | 'tertiary';
 };
 
 type ButtonAsButton = BaseProps &
@@ -12,10 +12,10 @@ type ButtonAsButton = BaseProps &
     as?: 'button';
   };
 
-type ButtonAsUnstyled = Omit<ButtonAsButton, 'as' | 'styleType'> & {
-  as: 'unstyled';
-  styleType?: BaseProps['styleType'];
-};
+// type ButtonAsUnstyled = Omit<ButtonAsButton, 'as' | 'styleType'> & {
+//   as: 'unstyled';
+//   styleType?: BaseProps['styleType'];
+// };
 
 type ButtonAsLink = BaseProps & {
   as: 'link';
@@ -26,39 +26,54 @@ type ButtonAsExternal = BaseProps &
     as: 'externalLink';
   };
 
-type ButtonProps =
-  | ButtonAsButton
-  | ButtonAsExternal
-  | ButtonAsLink
-  | ButtonAsUnstyled;
+type ButtonProps = ButtonAsButton | ButtonAsExternal | ButtonAsLink;
 
-export default function Button(props: ButtonProps): JSX.Element {
-  const allClassNames = `${props.styleType ? props.styleType : ''} ${
-    props.className ? props.className : ''
-  }`;
+export default function Button({
+  className,
+  variant,
+  as,
+  children,
+  ...rest
+}: ButtonProps): JSX.Element {
+  const variantStyle = {
+    primary:
+      'bg-brandColor text-white hover:bg-brandColor/95 rounded-full py-2 px-6 mt-5 block text-center max-w-[200px] mx-auto',
+    secondary: '',
+    tertiary: '',
+  };
 
-  if (props.as === 'link') {
+  if (as === 'link') {
     // don't pass unnecessary props to component
-    const { className, styleType, as, ...rest } = props;
-    return <Link href='' className={allClassNames} {...rest} />;
-  } else if (props.as === 'externalLink') {
-    const { className, styleType, as, ...rest } = props;
+    return <Link href='' className={variantStyle[variant]} />;
+  } else if (as === 'externalLink') {
     return (
       <a
-        className={allClassNames}
+        className={variantStyle[variant]}
         // provide good + secure defaults while still allowing them to be overwritten
         target='_blank'
         rel='noopener noreferrer'
-        {...rest}
+        // {...rest}
       >
-        {props.children}
+        {children}
       </a>
     );
-  } else if (props.as === 'unstyled') {
-    const { className, styleType, as, ...rest } = props;
-    return <button className={className} {...rest} />;
-  } else {
-    const { className, styleType, as, ...rest } = props;
-    return <button className={allClassNames} {...rest} />;
+  }
+  // else if (props.as === 'unstyled') {
+  //   const { className, styleType, as, children, ...rest } = props;
+  //   return (
+  //     <button className={className} {...rest}>
+  //       {' '}
+  //       {children}
+  //     </button>
+  //   );
+  else {
+    return (
+      <button
+        className={variantStyle[variant]}
+        // {...rest}
+      >
+        {children}
+      </button>
+    );
   }
 }

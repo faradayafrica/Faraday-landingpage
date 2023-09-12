@@ -11,6 +11,7 @@ import WannaRead from '@/components/homepage/WannaRead';
 import PeopleSaying from '@/components/homepage/PeopleSaying';
 import AIBot from '@/components/homepage/AIBot';
 import WhyNel from '@/components/homepage/WhyNel';
+import JoinUs from '@/components/homepage/JoinUs';
 
 export default function Home() {
   return (
@@ -41,17 +42,19 @@ export default function Home() {
         <SectionContainer className='home-gradient md:pr-0'>
           <LatestPost />
         </SectionContainer>
-        <SectionContainer>
+        <SectionContainer className=''>
           <WannaRead />
         </SectionContainer>
         <SectionContainer>
           <PeopleSaying />
         </SectionContainer>
+        <SectionContainer className='!min-h-fit'>
+          <JoinUs />
+        </SectionContainer>
         <SectionContainer className='bg-[url(/images/bg-pattern-footer.png)] !min-h-fit bg-[#333B47]'>
-          <Footer />
+          <Footer isHome />
         </SectionContainer>
       </div>
-
     </>
   );
 }

@@ -12,7 +12,7 @@ const workSans = Work_Sans({ subsets: ['latin'], variable: '--font-workSans' });
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <main className={` ${workSans.className}`}>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </main>
   );
 }

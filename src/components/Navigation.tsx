@@ -5,24 +5,44 @@ import Logo from '../images/logo.svg';
 import Link from 'next/link';
 import { cn } from '@/util';
 
-const links = [
-  {
-    title: 'Product Page',
-    link: '#',
-  },
-  {
-    title: 'The Faraday App',
-    link: '#',
-  },
-  {
-    title: 'About',
-    link: 'https://about.faraday.africa/',
-  },
-  {
-    title: 'Blog',
-    link: '/blog',
-  },
-];
+const links = {
+  isHome: [
+    {
+      title: 'Ask a Question',
+      link: '#',
+    },
+    {
+      title: 'Blog',
+      link: '#',
+    },
+    {
+      title: 'Community',
+      link: '#',
+    },
+    {
+      title: 'Download app',
+      link: '#',
+    },
+  ],
+  isBlog: [
+    {
+      title: 'Product Page',
+      link: '#',
+    },
+    {
+      title: 'The Faraday App',
+      link: '#',
+    },
+    {
+      title: 'About',
+      link: 'https://about.faraday.africa/',
+    },
+    {
+      title: 'Blog',
+      link: '/blog',
+    },
+  ],
+};
 
 export default function Navigation({ isHome }: { isHome?: boolean }) {
   const [hamClicked, setHamClicked] = useState(false);
@@ -62,7 +82,7 @@ export default function Navigation({ isHome }: { isHome?: boolean }) {
 
               <div className='my-auto h-auto'>
                 <ul className='flex flex-col text-center gap-6 justify-between font-workSans'>
-                  {links.map((link) => (
+                  {links[isHome ? 'isHome' : 'isBlog'].map((link) => (
                     <li key={link.title}>
                       <Link href={link.link}>{link.title}</Link>
                     </li>
@@ -88,7 +108,7 @@ export default function Navigation({ isHome }: { isHome?: boolean }) {
         </Link>
 
         <ul className='flex gap-6 justify-between font-workSans'>
-          {links.map((link) => (
+          {links[isHome ? 'isHome' : 'isBlog'].map((link) => (
             <li key={link.title}>
               <Link href={link.link}>{link.title}</Link>
             </li>
