@@ -10,7 +10,7 @@ function Footer({ isHome }: { isHome?: boolean }) {
     <footer
       className={`flex-1 ${
         isHome
-          ? 'text-white'
+          ? 'text-white py-16 md:py-0'
           : 'text-black bg-[url(/images/footer-bg.png)] py-16 bg-white'
       }`}
     >

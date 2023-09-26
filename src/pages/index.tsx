@@ -42,12 +42,13 @@ export default function Home() {
         <SectionContainer className='home-gradient md:pr-0'>
           <LatestPost />
         </SectionContainer>
-        <SectionContainer className=''>
-          <WannaRead />
-        </SectionContainer>
-        <SectionContainer>
+        <SectionContainer className='md:pr-0'>
           <PeopleSaying />
         </SectionContainer>
+        <SectionContainer className='md:pr-0'>
+          <WannaRead />
+        </SectionContainer>
+
         <SectionContainer className='!min-h-fit'>
           <JoinUs />
         </SectionContainer>

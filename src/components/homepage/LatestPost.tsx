@@ -12,34 +12,34 @@ const LatestPost = () => {
         </p>
       </div>
 
-      <div className='flex md:flex-row flex-col overflow-y-auto max-h-[550px] md:overflow-x-auto gap-4 mt-12 scroll-bar'>
+      <div className='flex p-3 md:flex-row flex-col overflow-y-auto max-h-[550px] md:overflow-x-auto gap-4 mt-12 scroll-bar'>
         <Image
           src={'/images/home/latest-post.svg'}
           width={500}
           height={300}
           alt='Latest Posts'
-          className='mx-auto'
+          className='mx-auto rounded-2xl shadow-md'
         />
         <Image
           src={'/images/home/latest-post.svg'}
           width={500}
           height={300}
           alt='Latest Posts'
-          className='mx-auto'
+          className='mx-auto rounded-2xl shadow-md'
         />
         <Image
           src={'/images/home/latest-post.svg'}
           width={500}
           height={300}
           alt='Latest Posts'
-          className='mx-auto'
+          className='mx-auto rounded-2xl shadow-md'
         />
         <Image
           src={'/images/home/latest-post.svg'}
           width={500}
           height={300}
           alt='Latest Posts'
-          className='mx-auto'
+          className='mx-auto rounded-2xl shadow-md'
         />
       </div>
     </div>

@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 function PeopleSaying() {
   return (
-    <section className='px-5 flex-1'>
+    <section className='px-5 flex-1 md:pr-0'>
       <div className='text-center'>
         <TypographyH2>What people are saying</TypographyH2>
         <p>About Faraday</p>
@@ -32,7 +32,7 @@ function PeopleSaying() {
           alt='Latest Posts'
           className='mx-auto'
         />
-        </div>
+      </div>
     </section>
   );
 }

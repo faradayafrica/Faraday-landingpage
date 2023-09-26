@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const NeverStuck = () => {
   return (
-    <div className='grid md:grid-cols-2 gap-2 md:gap-5 h-screen flex-1'>
+    <div className='overflow-hidden grid md:grid-cols-2 gap-2 md:gap-5 h-screen flex-1'>
       <Image
         src={'/images/home/never-stuck.png'}
         width={1000}

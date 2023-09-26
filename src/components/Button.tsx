@@ -1,3 +1,4 @@
+import { cn } from '@/util';
 import Link from 'next/link';
 import * as React from 'react';
 
@@ -37,18 +38,18 @@ export default function Button({
 }: ButtonProps): JSX.Element {
   const variantStyle = {
     primary:
-      'bg-brandColor text-white hover:bg-brandColor/95 rounded-full py-2 px-6 mt-5 block text-center max-w-[200px] mx-auto',
+      'bg-brandColor text-white hover:bg-brandColor/95 rounded-full py-2 px-6 mt-5 block text-center',
     secondary: '',
     tertiary: '',
   };
 
   if (as === 'link') {
     // don't pass unnecessary props to component
-    return <Link href='' className={variantStyle[variant]} />;
+    return <Link href='' className={cn(variantStyle[variant], className)} />;
   } else if (as === 'externalLink') {
     return (
       <a
-        className={variantStyle[variant]}
+        className={cn(variantStyle[variant], className)}
         // provide good + secure defaults while still allowing them to be overwritten
         target='_blank'
         rel='noopener noreferrer'
@@ -69,7 +70,7 @@ export default function Button({
   else {
     return (
       <button
-        className={variantStyle[variant]}
+        className={cn(variantStyle[variant], className)}
         // {...rest}
       >
         {children}
